@@ -1,0 +1,136 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.headerr{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.lawyer{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+}
+.lawyer h1{
+    width: 30%;
+    font-size: 24px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#navMenu{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 3px;
+    text-align: start;
+}
+.lawyer ul{
+    width: 50%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7px;
+}
+.lawyer ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+.make{
+    width: 21%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+}
+.make button{
+    width: 148px;
+    height: 40px;
+    border: none;
+    background-color: #4CAF4F;
+    color: white;
+    border-radius: 3px;
+}
+.make button:hover{
+    background-color: white;
+    color: #4CAF4F;
+    border: 1px solid #4CAF4F;
+}
+.call{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 7px;
+}
+.call a{
+    color: darkred;
+}
+.call p{
+    color: black;
+    font-weight: 600;
+    display: contents;
+}
+.menu{
+    display: none;
+}
+.hidden {
+    display: none;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .visible {
+    display: block;
+  }
+.mr-auto{
+    gap: 7px;
+    justify-content: space-between;
+}
+
+  @media screen and (max-width: 991px) {
+    .menu {
+      display: block;
+    }
+  
+    .lawyer ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px; 
+    }
+  
+    .lawyer ul li {
+      display: block;
+    }
+  
+    .make {
+      display: flex;
+    }
+  
+    .lawyer ul.visible {
+      display: flex;
+    }
+  }
+  @media (max-width: 600px) {
+    #dropmenu{
+      position: absolute!important;
+    }
+    .make button{
+        width: 99px;
+    }
+  }
